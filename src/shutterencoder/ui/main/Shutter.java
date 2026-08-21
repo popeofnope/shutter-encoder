@@ -2129,7 +2129,7 @@ public class Shutter {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				
-				int totalLength = 0;
+				long totalLength = 0L;
 				FFPROBE.totalLength = 0;
 				FFPROBE.analyzedMedia = null;
 
