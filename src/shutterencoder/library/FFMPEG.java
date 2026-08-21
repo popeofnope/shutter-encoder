@@ -1127,7 +1127,7 @@ public static StringBuilder errorLog = new StringBuilder();
 				{
 					double totalIn =  (seg.inH * 3600 + seg.inM * 60 + seg.inS);
 					double totalOut = (seg.outH * 3600 + seg.outM * 60 + seg.outS);
-					fileLength += totalOut - totalIn;
+					fileLength += (int) (totalOut - totalIn);
 				}
 			}
 			else if (VideoPlayerUI.playerMarkIn > 0 || VideoPlayerUI.playerMarkOut < VideoPlayerCore.waveformContainer.getWidth())
