@@ -66,7 +66,7 @@ public class Merge extends Shutter {
 
 					try {
 						
-						int totalLength = 0;
+						long totalLength = 0L;
 						frame.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));			
 						PrintWriter writer = new PrintWriter(listeBAB, "UTF-8");   
 						
