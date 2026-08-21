@@ -91,7 +91,7 @@ public class FunctionUtils extends Shutter {
 	public static boolean skipToAll = false;
 	public static File OPAtomFolder;
 	public static String silentTrack = "";
-	public static int mergeDuration = 0;
+	public static long mergeDuration = 0L;
 	public static boolean bestBitrateMode;
 	public static boolean goodBitrateMode;
 	public static boolean autoBitrateMode;
