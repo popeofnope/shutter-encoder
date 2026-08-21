@@ -99,7 +99,7 @@ public class DVDRIP extends Shutter {
 					
 					int vtsNumber = 1;
 					String VOB = null;
-					int dureeTotale = 0;
+					long dureeTotale = 0;
 					for (i = 0; i < vobArray.length ; i++)
 					{		
 						VOB  = vobArray[i];
@@ -131,7 +131,7 @@ public class DVDRIP extends Shutter {
 							}
 							else //Si le fichier VTS passe de VTS_01 à VTS_02 on execute le bout à bout existant avant de le recréer ou si il n'y a pas de VTS_02								
 							{				
-								progressBar.setMaximum((int) (dureeTotale / 1000));
+								progressBar.setMaximum((int) Math.min(Integer.MAX_VALUE, dureeTotale / 1000));
 								
 								//On enregistre le fichier de la liste des VOB
 								writer.close();
